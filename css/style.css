@@ -1,0 +1,167 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: "Muli", "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lato";
+}
+.leader_body{
+	width: 80%;
+	height: 1510px;
+	margin-left: 10%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	box-shadow: -1px -2px 2px rgba(0, 0, 0, 0.1), 1px 2px 2px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+.leader_header{
+	width: 100%;
+	height: 60px;
+	border-bottom: 2px solid #F6F6F6;
+}
+.leader_header_logo{
+	width: 35%;
+	height: 60px;
+	float: left;
+	margin-left: 10px;
+}
+.leader_header_logo img{
+	width: 100%;
+	height: 100%;
+}
+.table_sort_body{
+	width: 250px;
+	height: 100%;
+	float: right;
+	box-shadow: -1px -2px 2px rgba(0, 0, 0, 0.1), 1px 2px 2px rgba(0, 0, 0, 0.1);
+	background-color: #00aeff;
+	color: black;
+	border: 2px solid black;
+}
+.sort_title{
+	width: 100%;
+	float: left;
+	order: 1;
+	height: 54%;
+	text-align: center;
+	line-height: 30px;
+	font-size: 22px;
+	border-bottom: 2px solid black;
+	font-weight: 700px;
+}
+.sort_by_highest{
+	float: left;
+	order:2;
+	width: 50%;
+	height: 45%; 
+	text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+	line-height:30px;
+	font-weight: 400px;
+	transition: background-color 0.3s ease-in-out;
+	order: 2;
+	border-right: 2px solid black;
+}
+.sort_by_lowest{
+	float: left;
+	order:2;
+	width: 49%;
+	height: 45%; 
+	text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+	line-height:28px;
+	font-weight: 400px;
+	transition: background-color 0.3s ease-in-out;
+	order: 1;
+}
+.sort_by_lowest:hover, .sort_by_highest:hover{
+	color: white;
+}
+.table_body{
+	overflow-x:auto;
+	width: 100%;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.candidate_fullname_title, .candidate_username_title, .candidate_email_title,
+.candidate_fullname, .candidate_username, .candidate_email{
+  text-align: center !important;
+  padding: 8px;
+  width: 28%;
+}
+.present_point_title, .present_point{
+  text-align: center !important;
+  padding: 8px;
+  width: 10%;
+}
+.present_point{
+	position: relative;
+}
+.candidate_SN_title, .candidate_SN{
+  text-align: center !important;
+  padding: 8px;
+  width: 6%;
+}
+.present_point{
+	color: #00945e;
+}
+.candidate_username{
+	color: #00aeff;
+}
+.candidate_SN{
+	color: orange;
+}
+tr:nth-child(even) {
+  background-color: #F6F6F6;
+}
+.twitter-share-button{
+	color: #00aeff;
+	margin-left: 5px;
+	cursor: pointer;
+	position: absolute;
+	right: 2px;
+	padding: 2px;
+	font-size:12px;
+	bottom: 0px;
+}
+.prev_next_body{
+	height: 50px;
+	width: 300px;
+	position: absolute;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0
+}
+.prev_table, .present_number, .table_num, .table_num, .next_table{
+	width: 40px;
+	height: 40px;
+	margin: 2px 9px;
+	border: 1px solid #ddd;
+	float: left;
+	font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.present_number{
+	color: #00aeff;
+	border:1px solid #00aeff;
+}
+@media (max-width: 600px){
+	.leader_header_logo{
+		width: 300px;
+	}
+	.leader_body{
+		height: auto;
+		width: 95%;
+		margin-left: 2.5%;
+	}
+	.prev_next_body{
+		bottom: -60px;
+	}
+	.table_sort_body{width: 100%;}
+}
