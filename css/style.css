@@ -5,12 +5,13 @@ body{
 }
 .leader_body{
 	width: 80%;
-	height: 1510px;
+	height: auto;
 	margin-left: 10%;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	box-shadow: -1px -2px 2px rgba(0, 0, 0, 0.1), 1px 2px 2px rgba(0, 0, 0, 0.1);
 	position: relative;
+	padding-bottom: 50px
 }
 .leader_header{
 	width: 100%;
@@ -80,6 +81,7 @@ body{
 .table_body{
 	overflow-x:auto;
 	width: 100%;
+	height: auto;
 }
 table{
 	width: 100%;
@@ -160,8 +162,7 @@ tr:nth-child(even) {
 		width: 95%;
 		margin-left: 2.5%;
 	}
-	.prev_next_body{
-		bottom: -60px;
+	.table_sort_body{
+		width: 99%;
 	}
-	.table_sort_body{width: 100%;}
 }
